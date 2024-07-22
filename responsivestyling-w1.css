@@ -4,7 +4,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+        height: 92.16783216783217vh;
     }
     .s1{
         background-color: blue;
@@ -19,8 +19,9 @@
         margin-left: 21px;
     }
     nav{
-        padding-top: 20px;
+        height: 7.8321678321678325vh;
         background-color: pink;
+        
     }
     .menu-button1{
         margin-right: 21px;
@@ -65,7 +66,6 @@
         margin-top: 20px;
     }
     .s1{
-        padding-top: 70px;
-      
+        height: 100vh;
     }
 }
