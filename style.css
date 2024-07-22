@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.name{
+    font-family: poppins;
+    font-weight: 400;
+}
+.navelements li a{
+    color: #555555;
+    font-family: poppins;
+    font-weight: 400;
+}   
+.topw1 h6{
+    color: #555555;
+    font-family: poppins;
+    font-weight: 400;
+}
+.topw1 h1{
+    color: #000000;
+    font-family: poppins;
+    font-weight: 600;
+}
+.topw1 h4{
+    color: #555555;
+    font-family: poppins;
+    font-weight: 500;
+}
+.download-cv{
+    font-family: poppins;
+    color: black;
+    font-weight: 500;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 33px;
+}
+.download-cv a{
+    text-decoration: none;
+    color: black;
+}
+.contact-info a{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.contact-info{
+    font-family: poppins;
+    color: white;
+    font-weight: 500;
+    background-color: #353535;
+    border: none;
+    border-radius: 33px;
+}
+.logosw1 img{
+    width: 32px;
+    height: 32px;
+}
+.logosw1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.botw1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.buttons-w1{
+    display: flex;
+}

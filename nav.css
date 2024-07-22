@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    min-height: 100vh;
+    background: url('laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+  }
+  .sidebar{
+    z-index: 999999;
+  }
+
+ 
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+ 
+  nav li a{
+    margin: 0;
+    padding: 0;
+  font-family: poppins;
+  color: #FFFFFF;
+  }
+  .emailfor{
+    font-family: aldrich;
+    color: #b7b7b7;
+  }
+  .emailmeat{
+    color: #DFA667;
+    font-family: poppins;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+background-color: #101010;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    
+  }
+  .sidebar li{
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .sidebar a{
+    width: 100%;
+    color: #FFFFFF;
+  }
+  .menu-button1{
+    display: none;
+  }
+  @media(max-width:922px){
+    .hideOnMobile{
+      display: none;
+      
+    }
+    .hideOnMobile1{
+        display: none;
+    }
+    .btn1, .btn2{
+        z-index: -1000000;
+    }
+    .menu-button{
+      display: block;
+    }
+ 
+
+
+
+  }
+  @media(max-width:922px){
+    .hideOnMobile,
+    .hideOnMobile1,
+    .btn1 ,.btn2{
+        display: none;
+    }
+    .menu-button1{
+      display: block;
+    }
+}
+
+  @media (max-width: 922px) {
+    .navelements,
+    .btn1,
+    .linktop {  /* Added .linktop here */
+      display: none;
+    }
+  }
+  @media screen and (max-width: 400px){
+    .sidebar{
+     background-color: #101010;
+    }
+  }
+  .bgtop2{
+    z-index: -100;
+    position: absolute;
+    width: 100%;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .navelements{
+    display: flex;
+    gap: 48px;
+  }
+  .sideinfocont1{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-right: 29px;
+  }
+  /* .navelements li a{
+    color: #111111;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 600;
+  
+  } */
+  .navelements li:not(.btn1) a {
+    margin-right: 43px;
+  }
+  /* .btn1 {
+    width: 153px;
+    height: 45px;
+    background-color: #DFA667;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.btn2 {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none; /* Ensure no underline */
+    background-color: #DFA667;
+    padding: 5px 11px;
+    border-radius: 15px;
+    margin-top: -4px;
+}
+
+.linktop {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the content */
+}
+
+
+
+
+@media screen and (max-width:700px) {
+  
+  
+}
+.menu-button svg {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+.navbarul li{
+border: none;
+}
+.menu-button svg {
+  stroke: none; /* or */
+  stroke-opacity: 0;
+}
