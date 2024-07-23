@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.s3{
+    background-color: rgb(55, 226, 43);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px ; /* Adjust padding as needed */
+}
+.s3 img{
+    width: 32px;
+    height: 32px;
+}
+.infoTop-s3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infoTop-s3 h6{
+    font-family: poppins;
+    font-weight: 300;
+    color: #555555;
+}
+.infoTop-s3 h1{
+    font-family: poppins;
+    font-weight: 600;
+    color: black;
+}
+.frontend,.backend{
+    font-family: poppins;
+    font-weight: 500;
+    color: #555555;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.html h1,.css h1,.javascript h1,.react h1,.java h1,.python h1,.nodejs h1{
+    font-family: poppins;
+    font-weight: 600;
+    color: black;
+   font-size: 18px;
+    line-height: 18px;
+}
+.html p,.css p,.javascript p,.react p,.java p,.python p,.nodejs p{
+color: #555555;
+font-weight: 300;
+font-family: poppins;
+font-size: 16px;
+
+}
+.lng{
+    display: flex;
+    text-align: left;
+    gap: 26px;
+}
+.box1-s3,.box2-s3{
+    border: 1px solid black;
+    border-radius: 32px;
+}
+.boxes-s3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    
+}
+.box1-s3,.box2-s3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width:375px) {
+    .box1-s3{
+        width: 288px;
+        padding-top: 20px;
+        padding-bottom: 29px;
+      
+        
+    }
+    .box2-s3{
+        width: 288px;
+        padding-top: 20px;
+        padding-bottom: 29px;
+        
+    }
+
+   
+}
+   
+
+@media screen and (min-width:375px) and (max-width:1024px){
+    .box1-s3{
+        width: 320px;
+        padding-top: 20px;
+        padding-bottom: 29px;
+        
+        
+    }
+    .box2-s3{
+        width: 320px;
+        padding-top: 20px;
+        padding-bottom: 29px;
+        
+    }
+
+   
+}
+
+@media screen and (max-width:768px){
+    .boxes-s3{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .infoTop-s3 h6{
+        font-size: 16px;
+    }
+    .infoTop-s3 h1{
+        font-size: 30px;
+    }
+    
+}
+@media screen and (min-width:768px) {
+    .infoTop-s3 h6{
+        font-size: 24px;
+    }
+    .infoTop-s3 h1{
+        font-size: 48px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .info-box1-s3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 33px;
+        margin-top: 29px;
+    }
+    .info-box2-s3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 33px;
+        margin-top: 29px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+  
+.boxes-s3{
+align-items: flex-start;
+gap: 32px;
+}
+
+}
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    .boxes-s3{
+        align-items: flex-start;
+        gap: 32px;
+        }
+    .box1-s3{
+        width: 444px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        
+    }
+    .box2-s3{
+        width: 444px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+    .info-box1-s3{
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+    }
+    .info-box2-s3{
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+    }
+}
+@media screen and (min-width:1440px) {
+    .boxes-s3{
+        align-items: flex-start;
+        gap: 32px;
+        }
+    .box1-s3{
+        width: 544px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        
+        
+    }
+    .box2-s3{
+        width: 544px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        
+    }
+    .info-box1-s3{
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+    }
+    .info-box2-s3{
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+    }
+}

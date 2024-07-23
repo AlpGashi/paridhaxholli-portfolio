@@ -70,3 +70,9 @@ a{
 .buttons-w1{
     display: flex;
 }
+.bottoms1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
