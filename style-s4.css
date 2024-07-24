@@ -3,13 +3,14 @@
     padding: 0;
 }
 .s4{
-  
+    
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px ; /* Adjust padding as needed */
+    padding-top: 100px;
+    /* Adjust padding as needed */
 }
 .infoTop-s4{
     display: flex;

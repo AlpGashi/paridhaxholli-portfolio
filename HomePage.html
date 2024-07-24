@@ -11,28 +11,30 @@
     <link rel="stylesheet" href="style-s3.css">
     <link rel="stylesheet" href="style-s4.css">
     <link rel="stylesheet" href="style-s5.css">
+    <link rel="stylesheet" href="animations.css">
+  
 
 </head>
 <body>
    
-  <section class="s1">
+  <section class="s1" id="section1">
     <nav>
       <ul class="sidebar">
           <div class=""><li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="" height="26" viewBox="0 96 960 960" width="26"><path class="svgpertel" d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"fill="#ffffff"/></svg></a></li>
           </div>
-        <li class="sidebarlement a1" ><a href="#">About</a></li>
-        <li class="sidebarlement a1" ><a href="#">Experience</a></li>
-        <li class="sidebarlement a1" ><a href="#">Projects</a></li>
-        <li class="sidebarlement a1" ><a href="#">Contact</a></li>
+          <li class="sidebarlement a1" onclick="handleNavClick('#section2')"><a href="#section2">About</a></li>
+          <li class="sidebarlement a1" onclick="handleNavClick('#section3')"><a href="#section3">Experience</a></li>
+          <li class="sidebarlement a1" onclick="handleNavClick('#section4')"><a href="#section4">Projects</a></li>
+          <li class="sidebarlement a1" onclick="handleNavClick('#section5')"><a href="#section5">Contact</a></li>
   
       </ul>
         <ul class="navbarul" >
           <h1 class="name">Parid Haxholli</h1>
           <div class="navelements">
-            <li class="hideOnMobile hideOnMobile1 a1 homepage"><a href="#">About</a></li>
-            <li class="hideOnMobile hideOnMobile1 a1 homepage"><a href="#">Experience</a></li>
-            <li class="hideOnMobile hideOnMobile1 a1 aboutus2"><a href="#">Projects</a></li>
-            <li class="hideOnMobile hideOnMobile1 a1 help1"><a href="#">Contact</a></li>
+            <li class="hideOnMobile hideOnMobile1 a1 homepage"><a href="#section2">About</a></li>
+            <li class="hideOnMobile hideOnMobile1 a1 homepage"><a href="#section3">Experience</a></li>
+            <li class="hideOnMobile hideOnMobile1 a1 aboutus2"><a href="#section4">Projects</a></li>
+            <li class="hideOnMobile hideOnMobile1 a1 help1"><a href="#section5">Contact</a></li>
           </div>
         
           
@@ -68,7 +70,7 @@
         </div>
       </div>
   </section>
-  <section class="s2">
+  <section class="s2" id="section2">
     <div class="infoTop-s2">
       <h6>Get To Know More</h6>
         <h1>About Me</h1>
@@ -101,7 +103,7 @@
     </div>
     
   </section>
-  <section class="s3">
+  <section class="s3" id="section3">
       <div class="infoTop-s3">
         <h6>Explore My</h6>
         <h1>Experience</h1>
@@ -192,7 +194,7 @@
       </div>
       
   </section>
-  <section class="s4">
+  <section class="s4" id="section4">
     <div class="infoTop-s4">
       <h6>Browse My Recent</h6>
       <h1>Projects</h1>
@@ -202,8 +204,8 @@
         <div class="content-box1-s4 cntnt"></div>
         <h1>Project One</h1>
         <div class="buttons-s4 boxbuttons">
-          <button class="github-s4"><a href="#">Github</a></button>
-          <button class="liveDemo-s4"><a href="#">Live Demo</a></button>
+          <button class="github-s4 boxbutton"><a href="#">Github</a></button>
+          <button class="liveDemo-s4 boxbutton"><a href="#">Live Demo</a></button>
         </div>
       </div>
       <div class="box2-s4">
@@ -225,7 +227,7 @@
 
     </div>
   </section>
-  <section class="s5">
+  <section class="s5" id="section5">
     <div class="infoTop-s4">
       <h6>Get In Touch</h6>
       <h1>Contact Me</h1>
@@ -245,25 +247,55 @@
     </div>
     <footer>
       <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Experience</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#section2" class="animation-footer">About</a></li>
+        <li><a href="#section3" class="animation-footer">Experience</a></li>
+        <li><a href="#section4" class="animation-footer">Projects</a></li>
+        <li><a href="#section5" class="animation-footer">Contact</a></li>
       </ul>
     </footer>
 
   </section>
   <script>
     function showSidebar(){
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'flex'
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex';
     }
+  
     function hideSidebar(){
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'none'
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none';
+    }
+  
+    function handleNavClick(sectionId) {
+      // Close the sidebar
+      hideSidebar();
+      
+      // Smooth scroll to the section
+      const targetSection = document.querySelector(sectionId);
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
     }
 
-    
+
+
+    document.querySelectorAll('.info-box-s5').forEach(element => {
+  element.addEventListener('click', function() {
+    const text = this.querySelector('.copy-text').textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      const message = this.getAttribute('data-copy');
+      const copyMessageElem = document.querySelector('.copy-message');
+      copyMessageElem.textContent = message;
+      copyMessageElem.style.display = 'block';
+      setTimeout(() => {
+        copyMessageElem.style.display = 'none';
+      }, 2000); // Message disappears after 2 seconds
+    });
+  });
+});
+
   </script>
 </body>
 </html>

@@ -4,13 +4,12 @@
 }
 .s2{
    
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px ; /* Adjust padding as needed */
-     /* Adjust padding as needed */
+    padding-top: 100px ;
 }
 .infoTop-s2 h6, .infoTop-s2 h1{
     width: 100%;
@@ -48,7 +47,7 @@
 }
 @media screen and (max-width:768px) {
     .subheroimg{
-        border-radius: 20px;
+       
         margin-top: 8px;
     }
     .infoTop-s2 h6{
@@ -122,7 +121,7 @@
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
     .subheroimg{
-        border-radius: 20px;
+        
         width: 275px;
         height: 275px;
     }
@@ -198,7 +197,7 @@
 
 @media screen and (min-width:1024px) and (max-width:1440px) {
     .subheroimg{
-        border-radius: 20px;
+        
         width: 275px;
         height: 275px;
     }
@@ -276,7 +275,7 @@
 
 @media screen and (min-width:1440px) {
     .subheroimg{
-        border-radius: 20px;
+        
         width: 400px;
         height: 400px;
     }
@@ -299,6 +298,7 @@
         justify-content: center;
         align-items: center;
         gap: 32px;
+        margin-top: 32px;
     }
     .botright-s2{
         display: flex;
